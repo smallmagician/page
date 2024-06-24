@@ -1,60 +1,39 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>マジシャン認証</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
-        }
-        .confirm {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .deny {
-            background-color: #f44336;
-            color: white;
-        }
-    </style>
-    <script>
-        function handleAgeConfirmation(isConfirmed) {
-            if (isConfirmed) {
-                alert("ようこそ！マジックの世界へ！");
-                // ここに年齢確認が成功した場合の処理を追加
-            } else {
-                alert("ここから先は、マジック情報を扱うマジックサイトとなります。<br>マジシャン以外の方のアクセスは固くお断りします。");
-                // ここに年齢確認が失敗した場合の処理を追加
-            }
-        }
-    </script>
 </head>
-<body>
-    <div class="container">
-        <h1>マジシャン確認</h1>
-        <p>あなたはマジシャンですか？</p>
-        <button class="confirm" onclick="handleAgeConfirmation(true)">はい</button>
-        <button class="deny" onclick="handleAgeConfirmation(false)">いいえ</button>
+<body class="d-body-mg0">
+    <div id="w">
+        <div id="dm-content">
+            <main>
+                <div class="ageCheck">
+                    <h1 class="ageCheck__heading">マジシャン認証</h1>
+                    <h2 class="ageCheck__subHeading">あなたはマジシャンですか？</h2>
+                    <p class="ageCheck__desc">
+                        ここから先は、マジック情報を扱うマジックサイトとなります。<br>
+                        18歳未満の方のアクセスは固くお断りします。
+                    </p>
+                    <div class="ageCheck__btnBox">
+                        <div class="ageCheck__btn">
+                            <a href="https://smallmagician.github.io/page" class="ageCheck__link ageCheck__link--com">
+                                <p class="ageCheck__linkText">いいえ</p>
+                            </a>
+                        </div>
+                        <div class="ageCheck__btn">
+                            <a href="https://smallmagician.github.io/page" class="ageCheck__link ageCheck__link--r18">
+                                <p class="ageCheck__linkText">はい</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
     </div>
+    <footer class="_n4v1-footer">
+        <div class="_n4v1-copyright">
+            <p>© Lit_Magician</p>
+        </div>
+    </footer>
 </body>
 </html>
